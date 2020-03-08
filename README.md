@@ -21,6 +21,27 @@ The goal of the competition is to predict whether or not a DonorsChoose.org proj
 
 The `train.csv` data set provided by DonorsChoose contains the following features:
 
+
+
+### Notes on the Essay Data
+
+<ul>
+Prior to May 17, 2016, the prompts for the essays were as follows:
+<li>__project_essay_1:__ "Introduce us to your classroom"</li>
+<li>__project_essay_2:__ "Tell us more about your students"</li>
+<li>__project_essay_3:__ "Describe how your students will use the materials you're requesting"</li>
+<li>__project_essay_3:__ "Close by sharing why your project will make a difference"</li>
+</ul>
+
+
+<ul>
+Starting on May 17, 2016, the number of essays was reduced from 4 to 2, and the prompts for the first 2 essays were changed to the following:<br>
+<li>__project_essay_1:__ "Describe your students: What makes your students special? Specific details about their background, your neighborhood, and your school are all helpful."</li>
+<li>__project_essay_2:__ "About your project: How will these materials make a difference in your students' learning and improve their school lives?"</li>
+<br>For all projects with project_submitted_datetime of 2016-05-17 and later, the values of project_essay_3 and project_essay_4 will be NaN.
+</ul>
+
+
 Feature | Description 
 ----------|---------------
 **`project_id`** | A unique identifier for the proposed project. **Example:** `p036502`   
